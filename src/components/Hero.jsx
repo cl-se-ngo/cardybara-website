@@ -50,7 +50,7 @@ export default function Hero({ lang, t, scrollTo }) {
             {/* Art */}
             <div className="flex justify-center items-center order-first md:order-last">
               <img
-                src="/assets/cardybara-woodcut-logo-nobg.png"
+                src="/assets/cardybara-logo-new.png"
                 alt="Cardybara — a top-hatted capybara at a laptop"
                 className="w-full max-w-[280px] sm:max-w-[360px] md:max-w-[460px] lg:max-w-[500px] object-contain drop-shadow-[0_24px_48px_rgba(11,19,43,0.10)]"
               />
