@@ -1,4 +1,5 @@
-import { Check, UserPlus } from 'lucide-react'
+import { Check, UserPlus, X } from 'lucide-react'
+import { useState } from 'react'
 
 function PosMockup() {
   return (
@@ -60,10 +61,47 @@ function PosMockup() {
   )
 }
 
+function DemoModal({ t, onClose }) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
+      <div className="absolute inset-0 bg-navy-800/40 backdrop-blur-sm" />
+      <div
+        className="relative bg-white rounded-[20px] shadow-navy-xl p-8 max-w-sm w-full text-center"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-navy-300 hover:text-navy-600 transition-colors"
+        >
+          <X size={18} />
+        </button>
+        <div className="w-12 h-12 rounded-full bg-mint-50 flex items-center justify-center mx-auto mb-4">
+          <img src="/assets/spharm-mark.png" alt="" className="w-7 h-7 object-contain" />
+        </div>
+        <h3 className="text-[20px] font-extrabold text-navy-800 mb-2">
+          {t('demo.heading')}
+        </h3>
+        <p className="text-[15px] text-navy-500 leading-relaxed mb-6">
+          {t('demo.body')}
+        </p>
+        <a
+          href="mailto:cardybara@se-ngo.com"
+          className="inline-flex items-center justify-center w-full px-6 py-3.5 text-[15px] font-bold text-white bg-coral-500 rounded-[14px] shadow-action hover:bg-coral-600 transition-all duration-[120ms]"
+          onClick={onClose}
+        >
+          cardybara@se-ngo.com
+        </a>
+      </div>
+    </div>
+  )
+}
+
 const FEATURES = ['f1', 'f2', 'f3', 'f4', 'f5']
 
 export default function ProductSpotlight({ t }) {
+  const [showDemo, setShowDemo] = useState(false)
   return (
+    <>
     <section id="product" className="bg-mint-50 border-y border-mint-100">
       <div className="max-w-container mx-auto px-6 md:px-8 py-20 md:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -97,7 +135,10 @@ export default function ProductSpotlight({ t }) {
               ))}
             </ul>
 
-            <button className="px-7 py-3.5 text-[15px] font-bold text-white bg-mint-500 rounded-[14px] shadow-mint hover:bg-mint-600 hover:shadow-mint-lg active:bg-mint-700 active:translate-y-px transition-all duration-[120ms]">
+            <button
+              onClick={() => setShowDemo(true)}
+              className="px-7 py-3.5 text-[15px] font-bold text-white bg-mint-500 rounded-[14px] shadow-mint hover:bg-mint-600 hover:shadow-mint-lg active:bg-mint-700 active:translate-y-px transition-all duration-[120ms]"
+            >
               {t('product.cta')}
             </button>
           </div>
@@ -109,5 +150,7 @@ export default function ProductSpotlight({ t }) {
         </div>
       </div>
     </section>
+    {showDemo && <DemoModal t={t} onClose={() => setShowDemo(false)} />}
+  </>
   )
 }
