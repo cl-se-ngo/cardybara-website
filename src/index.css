@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-white text-navy-700;
+  }
+
+  /* Switch to Noto Sans HK when Chinese is active */
+  body.lang-zh {
+    font-family: 'Noto Sans HK', 'PingFang HK', -apple-system, system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  /* The CARDYBARA wordmark always stays in Inter regardless of lang */
+  .font-wordmark {
+    font-family: 'Inter', sans-serif !important;
+  }
+}
