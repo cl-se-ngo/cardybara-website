@@ -24,7 +24,7 @@ export default function Footer({ t, scrollTo }) {
             onClick={() => scrollTo('product')}
             className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
           >
-            少煩POS
+            {t('product.name')}
           </button>
           <button
             onClick={() => scrollTo('what-we-do')}
