@@ -1,4 +1,4 @@
-export default function Footer({ t, scrollTo }) {
+export default function Footer({ t, scrollTo, setPage }) {
   return (
     <footer className="bg-navy-800 text-white">
       <div className="max-w-container mx-auto px-6 md:px-8 py-12 md:py-14 flex flex-col gap-5">
@@ -39,6 +39,22 @@ export default function Footer({ t, scrollTo }) {
             cardybara@se-ngo.com
           </a>
         </nav>
+
+        {/* spharm POS legal links */}
+        <div className="flex flex-wrap gap-4">
+          <button
+            onClick={() => setPage('terms')}
+            className="text-[13px] text-white/40 hover:text-white/70 transition-colors duration-[120ms]"
+          >
+            spharm POS — {t('footer.terms')}
+          </button>
+          <button
+            onClick={() => setPage('privacy')}
+            className="text-[13px] text-white/40 hover:text-white/70 transition-colors duration-[120ms]"
+          >
+            spharm POS — {t('footer.privacy')}
+          </button>
+        </div>
 
         {/* Copyright */}
         <div className="mt-2 pt-5 border-t border-white/[0.08] text-[12px] text-white/30">

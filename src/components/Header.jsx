@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
-export default function Header({ lang, toggleLang, t, scrollTo }) {
+export default function Header({ lang, toggleLang, t, scrollTo, page, setPage }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const navLinks = [
@@ -11,7 +11,9 @@ export default function Header({ lang, toggleLang, t, scrollTo }) {
   ]
 
   const handleNav = (href) => {
-    scrollTo(href)
+    if (page !== 'home') setPage('home')
+    // Delay scroll slightly so home renders before scrolling
+    setTimeout(() => scrollTo(href), page !== 'home' ? 80 : 0)
     setMenuOpen(false)
   }
 
@@ -21,7 +23,7 @@ export default function Header({ lang, toggleLang, t, scrollTo }) {
 
         {/* Brand */}
         <button
-          onClick={() => scrollTo('top')}
+          onClick={() => page !== 'home' ? setPage('home') : scrollTo('top')}
           className="flex items-center gap-2.5 flex-shrink-0"
         >
           <img src="/assets/cardybara-hat-mark.png" alt="Cardybara" className="w-8 h-8 object-contain" />

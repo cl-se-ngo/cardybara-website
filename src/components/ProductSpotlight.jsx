@@ -98,7 +98,7 @@ function DemoModal({ t, onClose }) {
 
 const FEATURES = ['f1', 'f2', 'f3', 'f4', 'f5']
 
-export default function ProductSpotlight({ t }) {
+export default function ProductSpotlight({ t, setPage }) {
   const [showDemo, setShowDemo] = useState(false)
   return (
     <>
@@ -141,6 +141,13 @@ export default function ProductSpotlight({ t }) {
             >
               {t('product.cta')}
             </button>
+
+            {/* Legal links */}
+            <p className="mt-5 text-[12px] text-navy-400">
+              <button onClick={() => setPage('terms')} className="hover:text-navy-600 transition-colors duration-[120ms]">{t('footer.terms')}</button>
+              <span className="mx-2 opacity-40">·</span>
+              <button onClick={() => setPage('privacy')} className="hover:text-navy-600 transition-colors duration-[120ms]">{t('footer.privacy')}</button>
+            </p>
           </div>
 
           {/* POS mockup */}
