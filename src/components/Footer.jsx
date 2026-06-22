@@ -40,19 +40,19 @@ export default function Footer({ t, scrollTo, setPage }) {
           </a>
         </nav>
 
-        {/* spharm POS legal links */}
+        {/* Legal links */}
         <div className="flex flex-wrap gap-4">
           <button
             onClick={() => setPage('terms')}
             className="text-[13px] text-white/40 hover:text-white/70 transition-colors duration-[120ms]"
           >
-            spharm POS — {t('footer.terms')}
+            {t('footer.terms')}
           </button>
           <button
             onClick={() => setPage('privacy')}
             className="text-[13px] text-white/40 hover:text-white/70 transition-colors duration-[120ms]"
           >
-            spharm POS — {t('footer.privacy')}
+            {t('footer.privacy')}
           </button>
         </div>
 
