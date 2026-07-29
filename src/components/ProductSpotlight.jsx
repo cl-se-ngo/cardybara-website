@@ -114,7 +114,7 @@ export default function ProductSpotlight({ t, setPage }) {
 
             {/* Title */}
             <div className="flex items-center gap-3.5 mb-1 justify-center lg:justify-start">
-              <img src="/assets/spharm-logo-nobg.png" alt="SPHARM POS" className="h-11 md:h-12 object-contain" />
+              <img src="/assets/spharm-logo.png" alt="SPHARM POS" className="h-11 md:h-12 object-contain" />
               <h2 className="text-[34px] md:text-[40px] lg:text-[44px] font-extrabold tracking-[-0.025em] text-navy-800">
                 {t('product.name')}
               </h2>
