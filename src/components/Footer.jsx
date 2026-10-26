@@ -27,16 +27,22 @@ export default function Footer({ t, scrollTo, setPage }) {
             {t('product.name')}
           </button>
           <button
+            onClick={() => scrollTo('translator')}
+            className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
+          >
+            {t('translator.name')}
+          </button>
+          <button
             onClick={() => scrollTo('what-we-do')}
             className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
           >
             {t('footer.link.what')}
           </button>
           <a
-            href="mailto:cardybara@se-ngo.com"
+            href="mailto:info@cardybara.com"
             className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
           >
-            cardybara@se-ngo.com
+            info@cardybara.com
           </a>
         </nav>
 

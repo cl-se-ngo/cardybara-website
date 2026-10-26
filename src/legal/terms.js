@@ -49,7 +49,7 @@ export const terms = {
       {
         heading: '6. Termination',
         paras: [
-          "Either party may terminate this agreement at any time by giving thirty (30) days' written notice to cardybara@se-ngo.com or via the account management dashboard. Upon termination, your right to access the Software ceases, and it is your responsibility to export your Client Data prior to the termination date.",
+          "Either party may terminate this agreement at any time by giving thirty (30) days' written notice to info@cardybara.com or via the account management dashboard. Upon termination, your right to access the Software ceases, and it is your responsibility to export your Client Data prior to the termination date.",
         ],
       },
       {
@@ -116,7 +116,7 @@ export const terms = {
       {
         heading: '6. 條款終止',
         paras: [
-          '任何一方均可隨時透過給予三十（30）天的書面通知（發送至 cardybara@se-ngo.com）或透過帳戶管理控制台終止本協議。終止後，您使用本軟件的權利立即終止，您須負責在終止日期前自行匯出您的客戶數據。',
+          '任何一方均可隨時透過給予三十（30）天的書面通知（發送至 info@cardybara.com）或透過帳戶管理控制台終止本協議。終止後，您使用本軟件的權利立即終止，您須負責在終止日期前自行匯出您的客戶數據。',
         ],
       },
       {

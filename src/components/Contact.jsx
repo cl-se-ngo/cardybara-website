@@ -15,11 +15,11 @@ export default function Contact({ t, scrollTo }) {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <a
-            href="mailto:cardybara@se-ngo.com"
+            href="mailto:info@cardybara.com"
             className="inline-flex items-center justify-center gap-2 px-7 py-4 text-[15px] font-bold text-white bg-coral-500 rounded-[14px] shadow-action hover:bg-coral-600 hover:shadow-action-lg active:bg-coral-700 transition-all duration-[120ms]"
           >
             <Mail size={17} />
-            cardybara@se-ngo.com
+            info@cardybara.com
           </a>
           <button
             onClick={() => scrollTo('product')}

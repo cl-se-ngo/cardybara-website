@@ -85,11 +85,11 @@ function DemoModal({ t, onClose }) {
           {t('demo.body')}
         </p>
         <a
-          href="mailto:cardybara@se-ngo.com"
+          href="mailto:info@cardybara.com"
           className="inline-flex items-center justify-center w-full px-6 py-3.5 text-[15px] font-bold text-white bg-coral-500 rounded-[14px] shadow-action hover:bg-coral-600 transition-all duration-[120ms]"
           onClick={onClose}
         >
-          cardybara@se-ngo.com
+          info@cardybara.com
         </a>
       </div>
     </div>

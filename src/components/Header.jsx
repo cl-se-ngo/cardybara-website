@@ -7,6 +7,7 @@ export default function Header({ lang, toggleLang, t, scrollTo, page, setPage })
   const navLinks = [
     { key: 'nav.what',     href: 'what-we-do' },
     { key: 'nav.products', href: 'product' },
+    { key: 'nav.translator', href: 'translator' },
     { key: 'nav.contact',  href: 'contact' },
   ]
 

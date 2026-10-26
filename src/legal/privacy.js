@@ -44,7 +44,7 @@ export const privacy = {
         ],
         bullets: [
           'If your retail customers request access to their membership data, you must manage this request.',
-          'If you need to access, correct, or delete your own account subscription data with Cardybara, please contact us at: cardybara@se-ngo.com.',
+          'If you need to access, correct, or delete your own account subscription data with Cardybara, please contact us at: info@cardybara.com.',
         ],
       },
       {
@@ -100,7 +100,7 @@ export const privacy = {
         ],
         bullets: [
           '如果您的零售客戶要求查閱或更正其會員數據，您（店主）必須處理該項要求。',
-          '如果您需要查閱、更正或刪除您與 Cardybara 之間的賬戶訂閱數據，請透過以下方式與我們聯絡：cardybara@se-ngo.com。',
+          '如果您需要查閱、更正或刪除您與 Cardybara 之間的賬戶訂閱數據，請透過以下方式與我們聯絡：info@cardybara.com。',
         ],
       },
       {
