@@ -1,6 +1,6 @@
 import { Check, ArrowUpRight } from 'lucide-react'
 
-const APP_URL = 'https://casual-translator.web.app'
+const APP_URL = 'https://translate.cardybara.app'
 
 function TranslatorMockup() {
   // Mirrors the real app's three-zone stage layout: strip / stage / dock
