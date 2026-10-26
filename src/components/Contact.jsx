@@ -22,7 +22,7 @@ export default function Contact({ t, scrollTo }) {
             info@cardybara.com
           </a>
           <button
-            onClick={() => scrollTo('product')}
+            onClick={() => scrollTo('translator')}
             className="px-7 py-4 text-[15px] font-bold text-navy-800 bg-white border-[1.5px] border-navy-200 rounded-[14px] hover:border-navy-400 hover:bg-navy-50 active:bg-navy-100 transition-all duration-[120ms]"
           >
             {t('contact.cta2')}

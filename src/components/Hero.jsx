@@ -33,7 +33,7 @@ export default function Hero({ lang, t, scrollTo }) {
               {/* CTAs */}
               <div className="mt-8 md:mt-9 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
                 <button
-                  onClick={() => scrollTo('product')}
+                  onClick={() => scrollTo('translator')}
                   className="px-7 py-4 text-[16px] font-bold text-white bg-coral-500 rounded-[14px] shadow-action hover:bg-coral-600 hover:shadow-action-lg active:bg-coral-700 active:translate-y-px transition-all duration-[120ms]"
                 >
                   {t('hero.cta1')}

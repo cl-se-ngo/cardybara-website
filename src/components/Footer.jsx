@@ -21,16 +21,16 @@ export default function Footer({ t, scrollTo, setPage }) {
         {/* Links */}
         <nav className="flex flex-wrap gap-6">
           <button
-            onClick={() => scrollTo('product')}
-            className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
-          >
-            {t('product.name')}
-          </button>
-          <button
             onClick={() => scrollTo('translator')}
             className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
           >
             {t('translator.name')}
+          </button>
+          <button
+            onClick={() => scrollTo('product')}
+            className="text-[14px] font-medium text-white/70 hover:text-white transition-colors duration-[120ms]"
+          >
+            {t('product.name')}
           </button>
           <button
             onClick={() => scrollTo('what-we-do')}

@@ -44,9 +44,9 @@ export default function Services({ t }) {
         {/* Product pivot */}
         <div className="mt-16 md:mt-20 flex justify-center">
           <a
-            href="#product"
-            onClick={(e) => { e.preventDefault(); document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' }) }}
-            className="inline-flex items-center gap-2 px-5 py-2.5 border border-mint-200 rounded-full bg-mint-50 text-[13px] font-semibold text-mint-700 hover:bg-mint-100 transition-colors duration-[120ms]"
+            href="#translator"
+            onClick={(e) => { e.preventDefault(); document.getElementById('translator')?.scrollIntoView({ behavior: 'smooth' }) }}
+            className="inline-flex items-center gap-2 px-5 py-2.5 border border-coral-100 rounded-full bg-coral-50 text-[13px] font-semibold text-coral-700 hover:bg-coral-100 transition-colors duration-[120ms]"
           >
             <span>↓</span>
             <span>{t('pivot.label')}</span>

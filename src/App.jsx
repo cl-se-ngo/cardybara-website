@@ -68,8 +68,8 @@ export default function App() {
           <main>
             <Hero    lang={lang} t={t} scrollTo={scrollTo} />
             <Services t={t} />
-            <ProductSpotlight t={t} setPage={setPage} />
             <TranslatorSpotlight t={t} />
+            <ProductSpotlight t={t} setPage={setPage} />
             <Contact  t={t} scrollTo={scrollTo} />
           </main>
           <Footer t={t} scrollTo={scrollTo} setPage={setPage} />
